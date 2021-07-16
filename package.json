@@ -1,0 +1,22 @@
+{
+  "name": "phn-validator",
+  "version": "1.0.0",
+  "author": "FreshWorks Studio",
+  "license": "MIT",
+  "description": "Provides checksum validation for British Columbia Provicinal Health Numbers (PHN)",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "phn",
+    "validator",
+    "bc",
+    "personal",
+    "health",
+    "number"
+  ],
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
