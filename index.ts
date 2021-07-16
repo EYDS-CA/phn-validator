@@ -31,7 +31,8 @@ function getWeightedDigitSum(digits) {
   return sum % 11;
 }
 
-export function phnValidator(phn: string): boolean {
+export function phnValidator(phn?: string | null): boolean {
+  if (!phn) return false;
   if (phn.length !== VALID_LENGTH) return false;
 
   if (isNaN(Number(phn))) return false;
