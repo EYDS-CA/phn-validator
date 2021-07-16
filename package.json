@@ -1,6 +1,6 @@
 {
   "name": "phn-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "FreshWorks Studio",
   "license": "MIT",
   "description": "Provides checksum validation for British Columbia Provicinal Health Numbers (PHN)",
