@@ -4,7 +4,8 @@
   "author": "FreshWorks Studio",
   "license": "MIT",
   "description": "Provides checksum validation for British Columbia Provicinal Health Numbers (PHN)",
-  "main": "src/index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
