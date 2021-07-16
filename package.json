@@ -4,9 +4,28 @@
   "author": "FreshWorks Studio",
   "license": "MIT",
   "description": "Provides checksum validation for British Columbia Provicinal Health Numbers (PHN)",
-  "main": "index.ts",
+  "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "husky install",
+    "lint": "eslint",
+    "precommit": "run-s format:staged lint:staged",
+    "format:staged": "pretty-quick --staged",
+    "lint:staged": "lint-staged"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "eslint": "7.30.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "husky": "7.0.1",
+    "lint-staged": "11.0.1",
+    "prettier": "2.3.2",
+    "typescript": "4.3.5"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix"
   },
   "keywords": [
     "phn",
@@ -16,7 +35,8 @@
     "health",
     "number"
   ],
-  "devDependencies": {
-    "prettier": "2.3.2"
+  "dependencies": {
+    "@typescript-eslint/parser": "^4.28.3",
+    "pretty-quick": "^3.1.1"
   }
 }

@@ -21,7 +21,7 @@ function getWeightedDigits(digits: number[], weights: number[]) {
 }
 
 // Step 3
-function getWeightedDigitSum(digits) {
+function getWeightedDigitSum(digits: number[]) {
   let sum = 0;
 
   for (let i = 0; i < digits.length; i++) {
