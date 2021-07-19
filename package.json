@@ -16,7 +16,7 @@
     "lint:staged": "lint-staged"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/eslint-plugin": "4.28.3",
     "eslint": "7.30.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
@@ -24,8 +24,8 @@
     "lint-staged": "11.0.1",
     "prettier": "2.3.2",
     "typescript": "4.3.5",
-    "@typescript-eslint/parser": "^4.28.3",
-    "pretty-quick": "^3.1.1"
+    "@typescript-eslint/parser": "4.28.3",
+    "pretty-quick": "3.1.1"
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"
