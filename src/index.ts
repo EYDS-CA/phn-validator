@@ -31,7 +31,7 @@ function getWeightedDigitSum(digits: number[]) {
   return sum % 11;
 }
 
-export function phnValidator(phn?: string | null): boolean {
+function phnValidator(phn?: string | null): boolean {
   if (!phn) return false;
   if (phn.length !== VALID_LENGTH) return false;
 
@@ -54,3 +54,5 @@ export function phnValidator(phn?: string | null): boolean {
   // Step 5
   return checkSum === lastDigit;
 }
+
+module.exports = { phnValidator };
