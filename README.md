@@ -23,7 +23,9 @@ Or yarn
 ```typescript
 import { phnValidator } from 'phn-validator';
 
-phnValidator(123); // false
-phnValidator(0123456789); // false
-phnValidator(9260784079); // true
+phnValidator("123"); // false
+phnValidator("0123456789"); // false
+phnValidator("apple"); // Error: Input value must be a numeric string
+phnValidator(1001); // Error: Input value must be a string
+phnValidator("9260784079"); // true
 ```
