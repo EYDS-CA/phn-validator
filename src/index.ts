@@ -32,11 +32,16 @@ function getWeightedDigitSum(digits: number[]) {
 }
 
 function phnValidator(phn?: string | null): boolean {
+  if (typeof phn !== 'string') {
+    throw new Error('Input value must be a string');
+  }
+
+  if (isNaN(Number(phn))) {
+    throw new Error('Input value must be a numeric string');
+  }
+
   if (!phn) return false;
   if (phn.length !== VALID_LENGTH) return false;
-
-  if (isNaN(Number(phn))) return false;
-
   if (phn.charAt(0) !== VALID_FIRST_DIGIT) return false;
 
   // get the middle 8 digits and convert to numbers
