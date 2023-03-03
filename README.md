@@ -1,8 +1,8 @@
 # PHN Validator
 
 This package provides a simple validator for British Columbia provincial health numbers.
-The validation follows the process on page 23 of
-[this document](https://www2.gov.bc.ca/assets/gov/health/practitioner-pro/software-development-guidelines/vol-4b-application-rules-client-registry.pdf)
+The validation follows the process on page 33 of
+[this document](https://www2.gov.bc.ca/assets/gov/health/practitioner-pro/software-development-guidelines/conformance-standards/vol-4b-app-rules-client-registry.pdf).
 
 ## Installation
 
